@@ -2,14 +2,14 @@ name: Full
 on:
   workflow_call:
     inputs:
+      cvat-dir:
+        type: string
+        required: false  
       ref:
         type: string
         required: true
   workflow_dispatch:
-    inputs:
-      cvat-dir:
-        type: string
-        required: false    
+    inputs:  
       ref:
         type: string
         required: true
